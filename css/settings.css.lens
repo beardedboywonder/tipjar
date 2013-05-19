@@ -31,18 +31,18 @@ img {
 .fright { float:right; }
 
 hr {
-	clear: both;
+/*	clear: both;
 	border:0;
 	height:1px;
 	background:$color_hr;
 	margin-bottom:1.6364em;
-}
+*/}
 
 /* ----- LINKS ----- */
 
 a, a:link, a:visited {
 	text-decoration:none;
-	color:$color_links;
+	/*color:$color_links;*/
 	font-weight:normal;
 }
 
@@ -280,12 +280,17 @@ footer.bot {
 }
 
 footer.bot ul {
-	margin:0 0 1em 0;
+	margin: 1em auto;
+	text-transform: uppercase;
 }
 
 footer.bot li {
 	display:inline-block;
 	margin:auto 10px;
+}
+
+footer.bot li a{
+	color: #999;
 }
 
 /* PAGE STRUCTURE
@@ -597,13 +602,16 @@ article ol {
 .k-content-text {
 	padding:1em;
 	margin:0 0 1em;
-	background:$color_essay_caption;
+	/*background:$color_essay_caption;*/
 }
 
 .k-content-title {
-	margin:0 5px 0 0;
+	/*margin:0 5px 0 0;
 	display:block;
-	color:$color_essay_caption_text;
+	/*color:$color_essay_caption_text;*/
+	color: grey;
+	font-style: italic;
+	font-size: 10px;
 }
 
 .k-content-caption {}

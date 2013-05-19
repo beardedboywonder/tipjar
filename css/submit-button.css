@@ -1,0 +1,162 @@
+/* FOOTER SUBMIT (GLOBAL)
+----------------------------------------------- */
+
+#buttonholder {
+    background: black;
+    padding: 2em;
+}
+#buttonholder p {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    margin: 2em auto;
+    width: 550px;
+}
+.slideSign {
+    color:#f00;
+}
+.submit-button {
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    padding: 11px 20px;
+    border-radius: 5px;
+    background: #227ae5;
+    -webkit-box-shadow: #005580 0px 7px 0px 0px;
+    -moz-box-shadow: #005580 0px 7px 0px 0px;
+    box-shadow: #005580 0px 7px 0px 0px;
+    font: normal normal normal 14px arial;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0 auto;
+    width: 151px;
+}
+.submit-button a {
+    color: white;
+    text-decoration: none;
+}
+.submit-button:hover, .submit-button:focus {
+    background: #227ae5;
+    color: #ffffff;
+    text-decoration: none;
+}
+.submit-button:active {
+    background: #227ae5;
+    box-shadow: none;
+    top: 7px;
+}
+.slideContent2 {
+    position: relative;
+    margin: 0 auto;
+    width: 250px;
+}
+.submit-form {
+    background: white;
+    padding-bottom: 1px;
+}
+textarea {
+    outline: none;
+    resize: none;
+    font-size: 12px;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 5px 1px #dddddd;
+}
+form {
+    margin: 0 auto;
+    text-align: center;
+}
+form p {
+    text-align: center;
+    font-family: Georgia, 'serif';
+    font-style: italic;
+    font-size: 14px;
+    color: lightgrey;
+    margin: 5px 0 20px 0;
+}
+#switches {
+    position: relative;
+    width: 350px;
+    height: 100px;
+    margin: 0 auto;
+}
+.onoffswitch {
+    position: relative;
+    width: 60px;
+    margin: 40px -5px;
+    float: left;
+    -webkit-transform: rotate(-90deg);
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #C2C2C2;
+    border-radius: 35px;
+}
+.onoffswitch-inner {
+    width: 200%;
+    margin-left: -100%;
+    -moz-transition: margin 0.3s ease-in 0s;
+    -webkit-transition: margin 0.3s ease-in 0s;
+    -o-transition: margin 0.3s ease-in 0s;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    float: left;
+    width: 50%;
+    height: 20px;
+    padding: 0;
+    line-height: 20px;
+    font-size: 12px;
+    color: white;
+    font-family: Trebuchet, Arial, sans-serif;
+    font-weight: bold;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content:"";
+    padding-left: 10px;
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content:"";
+    padding-right: 10px;
+    background-color: #FFFFFF;
+    color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    width: 12px;
+    margin: 4px;
+    background: #A1A1A1;
+    border: 2px solid #A1A1A1;
+    border-radius: 35px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 36px;
+    -moz-transition: all 0.3s ease-in 0s;
+    -webkit-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s;
+    transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+    background-color: #227AE5;
+    border: 2px solid #227AE5;
+}
