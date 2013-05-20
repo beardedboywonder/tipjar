@@ -1,14 +1,11 @@
 
-Not necessarily in order.
+NOT NECESSARY IN ORDER.
 
 1.	Make sure all URLs have the correct name as their content
 	⁃	Can be done in Settings > Site Publishing > Labels and Links
 2.	Create terms page for standardized languages
 	⁃	Have users able to select which app? and have a universal terms page?
 3.	Create and style pagination
-4.	Create and style the Submit Tip form
-	⁃	Add it as page layout?
-	⁃	this way it could be included with any <koken:include /> statement in a template file
 5.	Figure out a way to merge filters
 	⁃	i.e. If someone were to click on Photoshop, clicking on the secondary nav would be filter=photoshop+'nav_option'
 	⁃	from the home page (all tips)
@@ -16,19 +13,22 @@ Not necessarily in order.
 	⁃	Unless you are the home page because it will display ALL of the most recent tips no matter what application
 7.	Correspond the header image to the current application color
 8.	Corresponding favicons?
-9.	Have a pc/mac toggle button that would switch all buttons like "cmd" with "ctrl"
+9.	Have a pc/mac toggle button that would switch all text like "cmd" with "ctrl"
 10.	Eventually be able to click on a tip, and it would give examples of how the specific tip would be useful. This might take a new page template or options so that we don't have to truncate captions, yet still have full examples.
 11.	Clicking on a tips difficulty will need to bring it the specific category page.
 	⁃	i.e. clicking on the 'intermediate' text on a photoshop tip takes you to the all the intermediate tips
 	⁃	OR just to intermediate photoshop tips. tough call.
-12.	Reformat Essays Page
+12.	Reformat documentation pages
 13.	About Page needs to be made
 14.	Contact page needs to be made
 15.	Each application page needs it's title to be displayed.
-16.	Footer needs toggle tip section.
-	⁃	now it needs a dotted bottom line divider between submit tip and bottom links
-18.	404 page
+17.	404 page
+18.	Continue documenting resources and adding terminology
 
 COMPLETED ITEMS
 
-15. Added footer with toggling tip section - non functional.
+4. Create and style the Submit Tip form
+	- added a page in layouts/submit.html
+	- called the page in layouts/footer.html
+16. Added footer with toggling tip section - non functional.
+	- added dotted line

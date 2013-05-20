@@ -8,11 +8,11 @@
 
 		<article>
 
-			<div class="lcol">
+			<!-- <div class="lcol">
 
 				<koken:include file="layouts/article-aside.html" />
 
-			</div>
+			</div> -->
 
 			<div class="mcol">
 
@@ -22,7 +22,7 @@
 					</h2>
 				</header>
 
-				{{ essay.content }}
+				{{ essay.excerpt }}
 
 			</div>
 

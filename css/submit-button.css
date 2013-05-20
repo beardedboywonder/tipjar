@@ -1,9 +1,29 @@
 /* FOOTER SUBMIT (GLOBAL)
 ----------------------------------------------- */
 
+hr {
+    overflow: hidden;
+    border: none;
+}
+hr:after {
+    content: "................................................................................................................................................................................";
+    letter-spacing: 1em;
+    border: none;
+}
+h2#form-label {
+    background: black;
+    color: white;
+    /*font-family: 'SixCaps', serif;*/
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 32px;
+    letter-spacing: 0.2em;
+    margin: 0;
+    padding-bottom: 0.5em;
+}
 #buttonholder {
     background: black;
-    padding: 2em;
+    padding-bottom: 2em;
 }
 #buttonholder p {
     color: white;

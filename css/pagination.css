@@ -1,0 +1,43 @@
+div.paginate ol#middle {
+	background: black;
+	padding: 0.5em;
+	width: 155px;
+	height: 30px;
+}
+ol.num li {
+
+}
+div.paginate div.nav:before {
+	display: block;
+	content: "";
+	width: 0;
+    height: 0;
+    border-left: 85px solid transparent;
+    border-right: 85px solid transparent;
+    border-bottom: 20px solid black;
+}
+div.paginate div.nav:after {
+	display: block;
+	content: "";
+	width: 0;
+    height: 0;
+    border-left: 85px solid transparent;
+    border-right: 85px solid transparent;
+    border-bottom: 20px solid black;
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+div.paginate li.next {
+	display: block;
+	position: relative;
+	float: right;
+	top: -24px;
+	left: 47px;
+	width: 40px;
+	height: 35px;
+	background: #227aeb;
+	z-index: -1;
+}

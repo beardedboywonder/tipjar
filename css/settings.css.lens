@@ -582,7 +582,7 @@ article header {
 }
 
 article p, article ul, article ol {
-	margin-bottom: 1.3846153846153846em;
+
 }
 
 article ul {
@@ -673,15 +673,13 @@ div.paginate {
 	float:left;
 	clear:left;
 	width:100%;
-	margin-top:3em;
 	text-align:center;
+	margin-bottom: 3em;
 }
-
 div.paginate div.nav {
 	margin:0 auto;
 	display:inline-block;
 }
-
 div.paginate ol {
 	list-style:none;
 	display:inline-block;
@@ -690,7 +688,6 @@ div.paginate ol {
 div.paginate ol li {
 	display:inline;
 }
-
 div.paginate a {
 	padding:0 5px;
 	text-align:center;
@@ -698,7 +695,6 @@ div.paginate a {
 	color:inherit;
 	font-size:.857em;
 }
-
 div.paginate a.k-pagination-current {
 	cursor:default;
 	color:$color_nav_current;
