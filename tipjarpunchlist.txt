@@ -1,16 +1,19 @@
 
 NOT NECESSARY IN ORDER.
 
+0.	Add a README FOR GITHUB
+
+0a.	Flesh out the info.json file so that it relates more to the "TipJar" theme rather 	than just being a duplicate of another
 1.	Make sure all URLs have the correct name as their content
 	⁃	Can be done in Settings > Site Publishing > Labels and Links
 2.	Create terms page for standardized languages
 	⁃	Have users able to select which app? and have a universal terms page?
 3.	Create and style pagination
 5.	Figure out a way to merge filters
-	⁃	i.e. If someone were to click on Photoshop, clicking on the secondary nav would be filter=photoshop+'nav_option'
+	⁃	i.e. If someone were to click on Photoshop, clicking on the secondary nav 		would be filter=photoshop+'nav_option'
 	⁃	from the home page (all tips)
-6.	Correspond the colors of the <h3> titles (beginner, intermediate, advanced) with the current application color
-	⁃	Unless you are the home page because it will display ALL of the most recent tips no matter what application
+6.	Correspond the colors of the <h3> titles (beginner, intermediate, advanced) with 	the current application color
+	⁃	Unless you are the home page because it will display ALL of the most 		recent tips no matter what application
 7.	Correspond the header image to the current application color
 8.	Corresponding favicons?
 9.	Have a pc/mac toggle button that would switch all text like "cmd" with "ctrl"

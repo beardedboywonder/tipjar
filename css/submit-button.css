@@ -1,4 +1,4 @@
-/* FOOTER SUBMIT (GLOBAL)
+/* FOOTER SUBMIT
 ----------------------------------------------- */
 
 hr {
@@ -115,13 +115,17 @@ form p {
 .onoffswitch-checkbox {
     display: none;
 }
-.onoffswitch-label {
+
+/* SWITCHES
+----------------------------------------------- */
+.onoffswitch-label,.onoffswitch-label-2,.onoffswitch-label-3,.onoffswitch-label-4,.onoffswitch-label-5,.onoffswitch-label-6,.onoffswitch-label-7 {
     display: block;
     overflow: hidden;
     cursor: pointer;
     border: 2px solid #C2C2C2;
     border-radius: 35px;
 }
+
 .onoffswitch-inner {
     width: 200%;
     margin-left: -100%;
@@ -175,8 +179,66 @@ form p {
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
     margin-left: 0;
 }
+.onoffswitch-checkbox:checked + .onoffswitch-label-2 .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label-3 .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label-4 .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label-5 .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label-6 .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label-7 .onoffswitch-inner {
+    margin-left: 0;
+}
+
+/* INSIDE SWITCH COLORS
+----------------------------------------------- */
+/* ONE - PHOTOSHOP    ------------------------- */
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
     right: 0px;
-    background-color: #227AE5;
-    border: 2px solid #227AE5;
+    background-color: #227ae5;
+    border: 2px solid #227ae5;
+}
+/* TWO - AFTER EFFECTS    --------------------- */
+.onoffswitch-checkbox:checked + .onoffswitch-label-2 .onoffswitch-switch {
+    right: 0px;
+    background-color: #8e22e5;
+    border: 2px solid #8e22e5;
+}
+/* THREE - ILUSTRATOR    ---------------------- */
+.onoffswitch-checkbox:checked + .onoffswitch-label-3 .onoffswitch-switch {
+    right: 0px;
+    background-color: #e5b122;
+    border: 2px solid #e5b122;
+}
+/* FOUR - INDESIGN    ------------------------- */
+.onoffswitch-checkbox:checked + .onoffswitch-label-4 .onoffswitch-switch {
+    right: 0px;
+    background-color: #c522e5;
+    border: 2px solid #c522e5;
+}
+/* FIVE - FLASH    ---------------------------- */
+.onoffswitch-checkbox:checked + .onoffswitch-label-5 .onoffswitch-switch {
+    right: 0px;
+    background-color: #e52222;
+    border: 2px solid #e52222;
+}
+/* SIX - DREAMWEAVER    ----------------------- */
+.onoffswitch-checkbox:checked + .onoffswitch-label-6 .onoffswitch-switch {
+    right: 0px;
+    background-color: #cfe522;
+    border: 2px solid #cfe522;
+}
+/* SEVEN - SUBLIME TEXT    ------------------ */
+.onoffswitch-checkbox:checked + .onoffswitch-label-7 .onoffswitch-switch {
+    right: 0px;
+    background-color: #e57d22;
+    border: 2px solid #e57d22;
 }
