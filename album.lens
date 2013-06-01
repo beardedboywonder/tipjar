@@ -3,6 +3,9 @@
 <koken:load limit="{{ settings.albums_detail_limit }}">
 
 <koken:head>
+	<link rel="icon" href="../../favicon-{{ album.title }}.ico" type="image/x-icon"> 
+	<link rel="shortcut icon" href="../../favicon-{{ album.title }}.ico" type="image/x-icon">
+
 	<meta property="og:site_name" content="{{ site.title }}" />
 	<meta property="og:title" content="{{ album.title strip_html="true" }}" />
 	<meta property="og:description" content="{{ album.summary | album.description strip_html="true" }}" />

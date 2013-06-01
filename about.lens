@@ -1,0 +1,12 @@
+<koken:include file="layouts/header.html" />
+
+<body>
+  <p>Dear</p>
+  <p>anyone who stumbles on this page,</p>
+  <p>THERE WILL BE AN ABOUT PAGE SOON</p>
+  <p>I promise</p>
+  <p>Love</p>
+  <p>jake</p>
+</body>
+
+<koken:include file="layouts/footer.html" />

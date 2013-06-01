@@ -19,10 +19,17 @@
 		"footer": {
 			"label": "Footer",
 			"defaults": [
-				"front", "albums", "contents", "essays", "twitter", "facebook", "gplus"
+				"front", "albums", "contents", "essays"
 			]
 		}
 	},
+	"templates": {
+	    "jar": {
+	      "name": "Tip Jar",
+	      "description": "Creating a new jar for a new application.",
+	      "source": "contents"
+	    }
+  	},
 	"styles": {
 		"white": {
 			"label": "White",
@@ -349,7 +356,7 @@
 				"albums_detail_limit": {
 					"label": "Items per page",
 					"type": "slider",
-					"min": 10,
+					"min": 8,
 					"max": 50,
 					"step": 1,
 					"value": 21,
@@ -482,6 +489,12 @@
 							}
 						]
 					},
+					"scope": [ "album" ]
+				},
+				"albums_detail_h3_color": {
+					"label": "Title Border Color",
+					"type": "color",
+					"value": "#0000000",
 					"scope": [ "album" ]
 				},
 				"albums_detail_show_caption": {

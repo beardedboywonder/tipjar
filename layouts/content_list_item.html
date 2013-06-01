@@ -28,17 +28,13 @@
 
 		<koken:if true="settings.content_index_show_caption">
 
-			<koken:not empty="content.caption">
-
-				<p>
-					<koken:if true="settings.content_index_truncate">
-						{{ content.caption truncate="130" }}
-					<koken:else>
-						{{ content.caption }}
-					</koken:if>
-				</p>
-
-			</koken:not>
+			<p>
+				<koken:if true="settings.content_index_truncate">
+					{{ content.caption truncate="130" }}
+				<koken:else>
+					{{ content.caption }}
+				</koken:if>
+			</p>
 
 		</koken:if>
 

@@ -2,33 +2,23 @@
 
 <koken:load limit="10">
 
-<div id="twocol" class="flip">
+<div style="margin-bottom:5em;">
+
+	<h1>Documentation</h1>
+	<p></p>
 
 	<koken:loop>
 
 		<article>
 
-			<!-- <div class="lcol">
-
-				<koken:include file="layouts/article-aside.html" />
-
-			</div> -->
-
-			<div class="mcol">
-
-				<header>
-					<h2>
-						<koken:link>{{ essay.title }}</koken:link>
-					</h2>
-				</header>
-
-				{{ essay.excerpt }}
-
-			</div>
+			<header>
+				<h2 class="doc-hover">
+					<koken:link>{{ essay.title }}</koken:link>
+				</h2>
+			</header>
+			<p>{{ essay.excerpt }}</p>
 
 		</article>
-
-		<hr>
 
 	</koken:loop>
 

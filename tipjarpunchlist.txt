@@ -15,18 +15,16 @@ NOT NECESSARY IN ORDER.
 6.	Correspond the colors of the <h3> titles (beginner, intermediate, advanced) with 	the current application color
 	⁃	Unless you are the home page because it will display ALL of the most 		recent tips no matter what application
 7.	Correspond the header image to the current application color
-8.	Corresponding favicons?
 9.	Have a pc/mac toggle button that would switch all text like "cmd" with "ctrl"
-10.	Eventually be able to click on a tip, and it would give examples of how the specific tip would be useful. This might take a new page template or options so that we don't have to truncate captions, yet still have full examples.
-11.	Clicking on a tips difficulty will need to bring it the specific category page.
-	⁃	i.e. clicking on the 'intermediate' text on a photoshop tip takes you to the all the intermediate tips
+10.	Eventually be able to click on a tip, and it would give examples of how the 	specific tip would be useful. This might take a new page template or options so 	that we don't have to truncate captions, yet still have full examples.
 	⁃	OR just to intermediate photoshop tips. tough call.
 12.	Reformat documentation pages
 13.	About Page needs to be made
 14.	Contact page needs to be made
-15.	Each application page needs it's title to be displayed.
 17.	404 page
 18.	Continue documenting resources and adding terminology
+19.	Needs to be mobile friendly sweet jesus what have I done.
+
 
 COMPLETED ITEMS
 
@@ -35,3 +33,8 @@ COMPLETED ITEMS
 	- called the page in layouts/footer.html
 16. Added footer with toggling tip section - non functional.
 	- added dotted line
+15.	Each application page needs it's title to be displayed.
+11.	Clicking on a tips difficulty will need to bring it the specific category page.
+	⁃	i.e. clicking on the 'intermediate' text on a photoshop tip takes you to 		the all the intermediate tips
+8.	Corresponding favicons?
+	- design them too

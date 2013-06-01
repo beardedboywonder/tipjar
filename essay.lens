@@ -1,6 +1,6 @@
 <koken:include file="layouts/header.html" />
 
-<div id="twocol" class="flip">
+<div>
 
 	<koken:load>
 

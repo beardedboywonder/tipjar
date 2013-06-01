@@ -3,8 +3,14 @@
 @import url(css/body/[$font_body].css);
 
 /*
-Title:			Elementary Theme
-Author:			Sebastian Pinehurst
+Title:			Tip Jar
+Author:			Jake Gross
+Based on:		Sebastian Pinehurst
+
+/* Tests
+----------------------------------------------- */
+
+
 
 /* GENERAL STYLES
 ----------------------------------------------- */
@@ -57,6 +63,10 @@ a.disabled, a.disabled:hover {
 	color:$color_text;
 }
 
+.doc-hover a {
+	font-weight: bold;
+}
+
 /* ----- HEADERS ----- */
 
 h1,h2,h3,h4,h5,h6 {
@@ -81,6 +91,10 @@ h2 {
 	font-size:1.142em;
 	line-height:1.313em;
 	margin-bottom:1.313em;
+}
+
+h3 {
+	text-align: left;
 }
 
 h3, h4, h5, h6 {
@@ -110,7 +124,7 @@ em {
 	font-style:italic;
 }
 
-b, strong { font-weight:bold; }
+b, strong { font-weight:bold; color:#555; }
 em, i { font-style:italic; }
 
 blockquote {
@@ -198,7 +212,7 @@ nav {
 	float:left;
 	width:100%;
 	position:relative;
-	margin:0 0 4em;
+	margin:0 0 2.5em;
 }
 
 nav ul li {
@@ -432,8 +446,8 @@ div.t-text {
     font-size: 11px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    border-bottom: solid #227ae5;
-    width: 40%;
+    border-bottom: solid $albums_detail_h3_color;
+    padding: 0 10px;
 }
 
 ol.thumbs {
@@ -569,6 +583,15 @@ img.content_main {
 
 /* ----- ESSAYS ----- */
 
+article {
+	width: 960px;
+	margin: 0 auto;
+	margin-bottom: 1em;
+	/*text-align: left;*/
+}
+article h2 {
+	text-align: left;
+}
 article hr {
 	clear:left;
 	height:0;
@@ -578,10 +601,19 @@ article hr {
 }
 
 article header {
-	margin-bottom:2em;
+	/*margin-bottom:2em;*/
+}
+article div {
+	text-align: left;
+}
+article p.description {
+	text-align: center;
+}
+article p {
+	text-align: left;
 }
 
-article p, article ul, article ol {
+article ul, article ol {
 
 }
 
@@ -848,6 +880,10 @@ li.album .t-text p {
 ----------------------------------------------- */
 @media only screen and (max-width: 767px) {
 
+	nav ul li {
+	display: block;
+	}
+
 	#container {
 		width:280px;
 	}
@@ -861,7 +897,9 @@ li.album .t-text p {
 	header.top {
 		margin-top:2em;
 	}
+	.tagline {
 
+	}
 	img.custom_logo {
 		-moz-transform: scale($site_title_img_scale_mobile);
 		-o-transform: scale($site_title_img_scale_mobile);

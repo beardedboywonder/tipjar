@@ -25,7 +25,7 @@
 			<koken:if true="settings.albums_detail_show_title">
 
 			<h3>
-				<koken:link title="{{ content.filename }}">
+		        <koken:link class="{{ content.context.album.slug }}" title="{{ content.title }}">
 					{{ content.title | content.filename }}
 				</koken:link>
 			</h3>

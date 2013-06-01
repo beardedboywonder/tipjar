@@ -20,51 +20,15 @@
 	</koken:content_image>
 </koken:head>
 
-<div class="head mcol">
+<div class="head">
 
-	<ul class="detail-nav">
-
-		<koken:parent>
-			<koken:variable name="previous_label" value="Previous" />
-			<koken:variable name="next_label" value="Next" />
-		<koken:else>
-			<koken:variable name="previous_label" value="Newer" />
-			<koken:variable name="next_label" value="Older" />
-		</koken:parent>
-
-		<li>
-			<koken:previous>
-				<koken:link title="{{ previous_label }}" bind_to_key="left">&larr; {{ previous_label }}</koken:link>
-			<koken:else>
-				<a class="disabled">&larr; {{ previous_label }}</a>
-			</koken:previous>
-		</li>
-
-		<li>/</li>
-
-		<li>
-			<koken:link lightbox="true" bind_to_key="l">Lightbox</koken:link>
-		</li>
-
-		<li>/</li>
-
-		<li>
-			<koken:next>
-				<koken:link title="{{ next_label }}" bind_to_key="right">{{ next_label }} &rarr;</koken:link>
-			<koken:else>
-				<a class="disabled" title="{{ next_label }}">{{ next_label }} &rarr;</a>
-			</koken:next>
-		</li>
-
-	</ul>
-
-	<h2>
+<!-- 	<h2>
 		{{ content.title | content.filename }}
-	</h2>
+	</h2> -->
 
 </div>
 
-<div id="twocol">
+<div>
 
 	<div class="mcol">
 
@@ -106,7 +70,7 @@
 
 	</div>
 
-	<div class="rcol">
+	<div>
 
 		<aside>
 
