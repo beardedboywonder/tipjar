@@ -1,6 +1,7 @@
 @import url(css/titles/[$font_title].css);
 @import url(css/headers/[$font_head].css);
 @import url(css/body/[$font_body].css);
+@import url(css/steelfish/steelfish.css);
 
 /*
 Title:			Tip Jar
@@ -24,6 +25,7 @@ body {
 	text-rendering:optimizeLegibility;
 	-webkit-font-smoothing: subpixel-antialiased;
 	-webkit-text-size-adjust: 100%;
+	overflow-y: scroll;
 }
 
 img {
@@ -171,6 +173,7 @@ header.top {
 	background-image: url('http://tipjar.cias.rit.edu/storage/cache/images/000/007/center-logo-01,huge.2x.png?1368455335');
     background-repeat: no-repeat;
     background-position: 50% 20%;
+    overflow: hidden;
 }
 
 header.top hgroup {
@@ -194,14 +197,16 @@ header.top h1 a:link, header.top h1 a:visited, header.top h1 a:active {
 }
 
 header span.tagline {
+	clear: both;
 	display:block;
 	color: white;
-	margin-top: 200px;
+	width: 600px;
+	margin: 0 auto;
 }
 
 .custom_logo {
 	display: block;
-	margin: 40px auto;
+	margin: 40px auto 0 auto;
 }
 
 /* NAV
@@ -221,7 +226,6 @@ nav ul li {
 	font-size: 12px;
 	line-height:3;
 	text-transform: uppercase;
-	/*padding: 0.5em 30px;*/
 }
 
 nav ul li:last-child { margin-right:0; }
@@ -320,20 +324,52 @@ footer.bot li a{
 	position:relative;
 	float:left;
 	width:100%;
-	margin-bottom:2em;
+	margin-bottom: 3em;
 	clear:both;
 }
-
 .head h2 {
-	font-family: "alternate-gothic-no-1-d",sans-serif;
+	font-family: "steelfish_rgregular", sans-serif;
 	font-size: 38px;
 	font-weight: 400px;
 	letter-spacing: 5px;
 	text-transform: uppercase;
 	display:inline-block;
-	margin:0 5px 0 0;
+	margin:0;
 }
-
+#deco-left {
+	display: inline-block;
+	background-image: url(imgs/title-deco.svg);
+	width: 90px;
+	height: 31px;
+	background-position: -5px 0px;
+	background-repeat: no-repeat;
+	margin-right: 4px;
+}
+#deco-right {
+	display: inline-block;
+	background-image: url(imgs/title-deco.svg);
+	width: 90px;
+	height: 31px;
+	background-position: -95px 0px;
+	background-repeat: no-repeat;
+}
+#deco-left-white {
+	display: inline-block;
+	background-image: url(imgs/title-deco-white.svg);
+	width: 90px;
+	height: 28px;
+	background-position: -5px 0px;
+	background-repeat: no-repeat;
+	margin-right: 4px;
+}
+#deco-right-white {
+	display: inline-block;
+	background-image: url(imgs/title-deco-white.svg);
+	width: 90px;
+	height: 28px;
+	background-position: -95px 0px;
+	background-repeat: no-repeat;
+}
 .head p:first-child {
 	margin-top:2em;
 }
@@ -450,20 +486,41 @@ div.t-text {
     padding: 0 10px;
 }
 
+.t-text h3 a.after-effects {
+    border-bottom: solid #8e22e5;
+}
+.t-text h3 a.illustrator {
+    border-bottom: solid #e5b122;
+}
+.t-text h3 a.indesign {
+    border-bottom: solid #c522e5;
+}
+.t-text h3 a.flash {
+    border-bottom: solid #e52222;
+}
+.t-text h3 a.dreamweaver {
+    border-bottom: solid #cfe522;
+}
+.t-text h3 a.sublime-text {
+    border-bottom: solid #e57d22;
+}
+
 ol.thumbs {
 	clear:left;
 	/*float:left;*/
+	max-width: 1555px;
+	margin: 0 auto;
 }
 
 ol.thumbs li {
 	width:258px;
 	display:inline-block;
 	vertical-align:top;
-	/*margin:0 45px 45px 0;*/
+	margin:0 25px 45px 25px;
 	font-size:.857em;
 }
 
-ol.thumbs li:nth-child(4n+1) {
+/*ol.thumbs li:nth-child(4n+1) {
 	margin: 0 45px 45px 0;
 }
 ol.thumbs li:nth-child(4n+2) {
@@ -475,7 +532,7 @@ ol.thumbs li:nth-child(4n+3) {
 ol.thumbs li:nth-child(4n) {
     margin: 0 0 45px 45px;
 }
-
+*/
 ol.thumbs li a.thumb {
 	display:block;
 	text-align:center;
@@ -905,11 +962,12 @@ li.album .t-text p {
 		-o-transform: scale($site_title_img_scale_mobile);
 		-webkit-transform: scale($site_title_img_scale_mobile);
 		transform: scale($site_title_img_scale_mobile);
-	    -moz-transform-origin: 0 50%;
-		-o-transform-origin: 0 50%;
-		-webkit-transform-origin: 0 50%;
-		transform-origin: 0 50%;
+	    -moz-transform-origin: 60px 50%;
+		-o-transform-origin: 60px 50%;
+		-webkit-transform-origin: 60px 50%;
+		transform-origin: 60px 50%;
 	    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=[$site_title_img_scale_mobile], M12=0, M21=0, M22=[$site_title_img_scale_mobile], SizingMethod='auto expand')";
+
 	}
 
 	ol.thumbs li {

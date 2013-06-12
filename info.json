@@ -9,6 +9,14 @@
 	},
 	"koken_version_required": "0.8.0-beta.1",
 
+	"routes": {
+		"/contact": {
+			"template": "contact",
+			"navigation": {
+				"label": "Contact"
+			}
+		}
+	},
 	"navigation_groups": {
 		"tier2": {
 			"label": "Secondary Nav",
@@ -30,7 +38,7 @@
 	      "source": "contents"
 	    }
   	},
-	"styles": {
+  		"styles": {
 		"white": {
 			"label": "White",
 			"variables": {

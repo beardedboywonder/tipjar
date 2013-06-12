@@ -1,0 +1,139 @@
+/*
+Title:          Tip Jar
+Author:         Jake Gross
+
+/* Description
+----------------------------------------------- 
+This will contain all the specific color information for TipJar. When you click on a tip, all elements listed below should co-ordinate to the tips' specific application color. Each tip is listening for its album using (the temporary) {{ routed_variables.slug}} call line. */
+
+
+/* COLORS
+----------------------------------------------- 
+
+PHOTOSHOP - #227ae5
+AFTER-EFFECTS - #8e22e5
+ILLUSTRATOR - #e5b122
+INDESIGN - #c522e5
+FLASH - #e52222
+DREAMWEAVER - #cfe522
+SUBLIME TEXT - #e57d22
+
+*/
+
+
+/* GENERAL STYLES
+----------------------------------------------- */
+
+.bar-one {
+    float: left;
+    position: relative;
+    height: 30px;
+    width: 50%;
+    top: 90px;
+    left: -60px;
+    border-right: solid #227ae5;
+}
+.bar-two {
+    float: right;
+    position: relative;
+    height: 30px;
+    width: 50%;
+    top: -80px;
+    left: 60px;
+    border-left: solid #227ae5;
+}
+.inside-one, .inside-two {
+    height: 13px;
+    border-bottom: solid #227ae5;
+}
+
+/* PHOTOSHOP
+----------------------------------------------- */
+.bar-one.photoshop {
+    border-right: solid #227ae5;
+}
+.bar-two.photoshop {
+    border-left: solid #227ae5;
+}
+.inside-one.photoshop, .inside-two.photoshop {
+    height: 13px;
+    border-bottom: solid #227ae5;
+}
+
+/* AFTER-EFFECTS
+----------------------------------------------- */
+.bar-one.after-effects {
+    border-right: solid #8e22e5;
+}
+.bar-two.after-effects {
+    border-left: solid #8e22e5;
+}
+.inside-one.after-effects, .inside-two.after-effects {
+    height: 13px;
+    border-bottom: solid #8e22e5;
+}
+
+/* ILLUSTRATOR
+----------------------------------------------- */
+.bar-one.illustrator {
+    border-right: solid #e5b122;
+}
+.bar-two.illustrator {
+    border-left: solid #e5b122;
+}
+.inside-one.illustrator, .inside-two.illustrator {
+    height: 13px;
+    border-bottom: solid #e5b122;
+}
+
+/* INDESIGN
+----------------------------------------------- */
+.bar-one.indesign {
+    border-right: solid #c522e5;
+}
+.bar-two.indesign {
+    border-left: solid #c522e5;
+}
+.inside-one.indesign, .inside-two.indesign {
+    height: 13px;
+    border-bottom: solid #c522e5;
+}
+
+/* FLASH
+----------------------------------------------- */
+.bar-one.flash {
+    border-right: solid #e52222;
+}
+.bar-two.flash {
+    border-left: solid #e52222;
+}
+.inside-one.flash, .inside-two.flash {
+    height: 13px;
+    border-bottom: solid #e52222;
+}
+
+/* DREAMWEAVER
+----------------------------------------------- */
+.bar-one.dreamweaver {
+    border-right: solid #cfe522;
+}
+.bar-two.dreamweaver {
+    border-left: solid #cfe522;
+}
+.inside-one.dreamweaver, .inside-two.dreamweaver {
+    height: 13px;
+    border-bottom: solid #cfe522;
+}
+
+/* SUBLIME TEXT
+----------------------------------------------- */
+.bar-one.sublime-text {
+    border-right: solid #e57d22;
+}
+.bar-two.sublime-text {
+    border-left: solid #e57d22;
+}
+.inside-one.sublime-text, .inside-two.sublime-text {
+    height: 13px;
+    border-bottom: solid #e57d22;
+}

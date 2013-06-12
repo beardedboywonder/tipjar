@@ -1,8 +1,7 @@
 <div class="head">
-
-	<h2>
-		{{ album.title }}
-	</h2>
+	<span id="deco-left"></span>
+	<h2>{{ album.title }}</h2>
+	<span id="deco-right"></span>
 
 	<koken:if true="settings.show_album_desc">
 		{{ album.description paragraphs="true" }}

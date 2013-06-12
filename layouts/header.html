@@ -16,8 +16,8 @@
 
 	<koken:asset file="reset.css" common="true" />
 	<koken:asset file="css/submit-button.css" />
-	<!-- <koken:asset file="css/pagination.css" /> -->
 	<koken:asset file="js/submit-button.js" />
+	<koken:asset file="css/tipjar.css" />
 
 	<koken:settings />
 
@@ -29,18 +29,26 @@
 
 		<header class="top">
 			<koken:if data="settings.site_title_type" equals="text">
-				<hgroup>
-					<koken:if true="settings.show_tagline">
-						<span class="tagline">{{ site.tagline }}</span>
-					</koken:if>
-					<h1><koken:link to="front" title="{{ site.title }}">{{ site.title }}</koken:link></h1>
-				</hgroup>
-			<koken:else>
-				<koken:link to="front" title="{{ site.title }}"><img src="{{ settings.site_title_img_url }}" alt="{{ site.title }}" class="custom_logo"></koken:link>
+			<hgroup>
+				<koken:if true="settings.show_tagline">
+				<span class="tagline">{{ site.tagline }}</span>
 			</koken:if>
-		</header>
+			<h1><koken:link to="front" title="{{ site.title }}">{{ site.title }}</koken:link></h1>
+		</hgroup>
+		<koken:else>
+		<div></div>
+		<div class="bar-one {{ routed_variables.slug }}">
+			<div class="inside-one {{ routed_variables.slug }}"></div>
+		</div>
+		<koken:link to="front" title="{{ site.title }}"><img src="{{ settings.site_title_img_url }}" alt="{{ site.title }}" class="custom_logo"></koken:link>
+		<div class="bar-two {{ routed_variables.slug }}">
+			<div class="inside-two {{ routed_variables.slug }}"></div>
+		</div>
+		<span class="tagline">{{ site.tagline }}</span>
+	</koken:if>
+</header>
 
-		<nav>
-			<koken:navigation />
-			<div id="tier2"><koken:navigation group="tier2" fallbacktext="Why no links showing :(" /></div>
-		</nav>
+<nav>
+	<koken:navigation />
+	<div id="tier2"><koken:navigation group="tier2" fallbacktext="Why no links showing :(" /></div>
+</nav>
