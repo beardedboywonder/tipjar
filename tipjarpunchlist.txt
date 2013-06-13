@@ -31,6 +31,7 @@ NOT NECESSARY IN ORDER.
 26.	Separate tip jargon .lens, instead of page?
 27.	Add a picture to the TipJargon page of a default application window, the label
 	everything so people can match it to the definition.
+28.	Get all extra .js bits into at least one js file [tipjar.js?]
 
 
 
