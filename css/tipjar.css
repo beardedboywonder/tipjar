@@ -59,7 +59,9 @@ SUBLIME TEXT - #e57d22
     height: 13px;
     border-bottom: solid #227ae5;
 }
-
+span.photoshop {
+    color: #227ae5;
+}
 /* AFTER-EFFECTS
 ----------------------------------------------- */
 .bar-one.after-effects {
@@ -72,7 +74,9 @@ SUBLIME TEXT - #e57d22
     height: 13px;
     border-bottom: solid #8e22e5;
 }
-
+span.after-effects {
+    color: #8e22e5;
+}
 /* ILLUSTRATOR
 ----------------------------------------------- */
 .bar-one.illustrator {
@@ -85,7 +89,9 @@ SUBLIME TEXT - #e57d22
     height: 13px;
     border-bottom: solid #e5b122;
 }
-
+span.illustrator {
+    color: #e5b122;
+}
 /* INDESIGN
 ----------------------------------------------- */
 .bar-one.indesign {
@@ -98,7 +104,9 @@ SUBLIME TEXT - #e57d22
     height: 13px;
     border-bottom: solid #c522e5;
 }
-
+span.indesign {
+    color: #c522e5;
+}
 /* FLASH
 ----------------------------------------------- */
 .bar-one.flash {
@@ -111,7 +119,9 @@ SUBLIME TEXT - #e57d22
     height: 13px;
     border-bottom: solid #e52222;
 }
-
+span.flash {
+    color: #e52222;
+}
 /* DREAMWEAVER
 ----------------------------------------------- */
 .bar-one.dreamweaver {
@@ -124,7 +134,9 @@ SUBLIME TEXT - #e57d22
     height: 13px;
     border-bottom: solid #cfe522;
 }
-
+span.dreamweaver {
+    color: #cfe522;
+}
 /* SUBLIME TEXT
 ----------------------------------------------- */
 .bar-one.sublime-text {
@@ -136,4 +148,7 @@ SUBLIME TEXT - #e57d22
 .inside-one.sublime-text, .inside-two.sublime-text {
     height: 13px;
     border-bottom: solid #e57d22;
+}
+span.sublime-text {
+    color: #e57d22;
 }
