@@ -1,6 +1,8 @@
 /* FOOTER SUBMIT
 ----------------------------------------------- */
-
+#submit-button {
+    font-family: 'Source Sans Pro', sans-serif;
+}
 hr {
     overflow: hidden;
     border: none;
@@ -32,7 +34,13 @@ hr:after {
     padding: 10px 25px 15px;
     position: relative;
 }
-.press:active, button[type="submit"]:active {
+.press:active {
+    box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .25), 0 0 2px rgba(0, 0, 0, .25);
+    margin-top: 5px;
+    padding-bottom: 12px;
+    top: 3px;
+}
+button[type="submit"]:active {
     box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .25), 0 0 2px rgba(0, 0, 0, .25);
     margin-top: 5px;
     padding-bottom: 12px;
@@ -46,7 +54,7 @@ hr:after {
     color: white;
     /* text-align: center; */
     font-size: 18px;
-    margin: 2em auto;
+    margin: 0 auto 2em auto;
     /* width: 550px; */
     max-width: 550px;
 }
