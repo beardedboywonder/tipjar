@@ -24,6 +24,7 @@ NOT NECESSARY IN ORDER.
 17.	404 page
 18.	Continue documenting resources and adding terminology
 19.	Needs to be mobile friendly sweet jesus what have I done.
+20.	Make Tumblr blog look like the site, maybe same nav?
 
 
 COMPLETED ITEMS

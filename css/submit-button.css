@@ -21,7 +21,7 @@ hr:after {
     letter-spacing: 0.2em;
     margin: 0 auto 15px auto;
 }
-.press, .press2 {
+.press, button[type="submit"] {
     background: #227ae5;
     border: none;
     border-radius: 5px;
@@ -32,12 +32,7 @@ hr:after {
     padding: 10px 25px 15px;
     position: relative;
 }
-.press:active {
-    box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .25), 0 0 2px rgba(0, 0, 0, .25);
-    margin-top: 5px;
-    padding-bottom: 12px;
-}
-.press2:active {
+.press:active, button[type="submit"]:active {
     box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .25), 0 0 2px rgba(0, 0, 0, .25);
     margin-top: 5px;
     padding-bottom: 12px;
