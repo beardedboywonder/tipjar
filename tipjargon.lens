@@ -1,0 +1,54 @@
+<koken:include file="layouts/header.html" />
+<div class="lens-wrapper">
+    <h2>TipJargon</h2>
+    <hr />
+    <p>You might come across a few terms that you aren't so sure of as you browse through TipJar. In an effort to standardize tips and make it easier for all the users who visit the site, I will be trying to use the official names of things like specific tools, windows, panels, and menu items. Even if you think you may not know them, there is a pretty good chance you actually do! Use the image below for a visual reference.</p>
+
+    <img src="http://tipjar.cias.rit.edu/storage/cache/images/000/033/basiclayout,xlarge.2x.png?1371156540" width="980px">
+
+    <dl class="accordion">
+        <dt><a href="">A – Application Frame</a></dt>
+        <dd>The Application frame groups all the workspace elements in a single, integrated window that lets you treat the application as a single unit. When you move or resize the Application frame or any of its elements, all the elements within it respond to each other so none overlap. Panels don’t disappear when you switch applications or when you accidentally click out of the application. If you work with two or more applications, you can position each application side by side on the screen or on multiple monitors.<br><br>If you are using a Mac and prefer the traditional, free-form user interface, you can turn off the Application frame. In <span class="illustrator">Adobe Illustrator</span>, for example, select Window > Application Frame to toggle it on or off. (In <span class="flash">Flash</span>, the Application frame is on permanently for Mac, and <span class="dreamweaver">Dreamweaver</span> for Mac does not use an Application frame.)</dd>
+        <dt><a href="">B – Document Windows</a></dt>
+        <dd>The Document window displays the file you’re working on. Document windows can be tabbed and, in certain cases, grouped and docked.</dd>
+        <dt><a href="">C – Workspace Switcher</a></dt>
+        <dd>The names of saved workspaces appear in the workspace switcher in the Application bar. By saving the current size and position of panels as a named workspace, you can restore that workspace even if you move or close a panel.</dd>
+        <dt><a href="">D – Control Panel</a></dt>
+        <dd>Located just below the Application Bar, the Control panel displays options for the currently selected tool. In Illustrator, the Control panel displays options for the currently selected object. (In <span class="photoshop">Adobe Photoshop</span> this is known as the Options bar. In <span class="flash">Adobe Flash</span>, <span class="dreamweaver">Adobe Dreamweaver</span>, and Adobe Fireworks this is known as the Property Inspector and includes properties of the currently selected element.)</dd>
+        <dt><a href="">E – Tools Panel</a></dt>
+        <dd>The default position for the Tools panel is on the left hand side of the application window. It contains tools for creating and editing images, artwork, page elements, and so on. Related tools are grouped.</dd>
+        <dt><a href="">Windows</a></dt>
+        <dd>Located in <b>Menu Bar > Window > *</b> clicking on Window shows you how you can create whatever you need. Options range from 3D, Timeline(s), to SVG Interactivity.</dd>
+
+
+    </dl>
+    <div class="footnote">
+        Information from:<br>
+        <a href="http://helpx.adobe.com/photoshop/topics.html">http://help.adobe.com</a>
+    </div>
+</div>
+<script type="text/javascript">
+(function($) {
+
+    var allPanels = $('.accordion > dd').hide();
+
+    $('.accordion > dt > a').click(function() {
+        allPanels.slideUp();
+        $('.accordion > dt > a').css({'border':'none','padding':'0'});        
+        // $(this).css({'color':'#ccc'});
+
+        if ($(this).parent().next().is(':hidden')) // If it is closed, then do these things:
+        {
+            //$(this).css({'color':'#000'});
+            $('dd').css({'border-left':'solid 10px rgba(34, 122, 229, 0.3)','padding-left':'10px'});
+            $(this).parent().next().slideDown();
+
+        }
+        
+        return false;
+    });
+
+})(jQuery);
+</script>
+
+<koken:include file="layouts/footer.html" />
