@@ -1,6 +1,48 @@
-$(function() {
+var Tipjar = {};
 
-    var Submitter = (function () {
+// Key/value pairs
+Tipjar.Settings = (function( $ ) {
+    'use strict';
+
+    var self = {},
+        ua = navigator.userAgent;
+
+    self.$window = $( window );
+    self.$document = $( document );
+    self.$html = $( document.documentElement );
+    self.$body = $( document.body );
+
+    self.system =  ua.indexOf('Mac') !== -1 ? 'mac' : 'windows';
+
+    return self;
+}( jQuery ));
+
+
+// Functions, polyfills, and more that extend the global namespace
+Tipjar.Environment = (function( Settings ) {
+    'use strict';
+
+    var self = {
+        init : function() {
+            self.addDeviceClasses();
+        },
+
+        addDeviceClasses : function() {
+            Settings.$body.addClass( Settings.system );
+        }
+    };
+
+    self.init();
+
+    return self;
+}( Tipjar.Settings ));
+
+
+// Global utility functions
+// Tipjar.Utilities = ();
+
+
+Tipjar.Submitter = (function( $ ) {
     'use strict';
 
     var $selectedCategory = $('.js-selected-category'),
@@ -42,7 +84,7 @@ $(function() {
             // Note: instead of using the value for the display
             // ('cause maybe you need nice characters for a database or something),
             // You could a data-* attribute with the correct label
-            setCategory(this.dataset.tipApp);
+            setCategory( this.dataset.tipApp );
         },
 
         // Maybe sanitize your data or check for required fields or ajax submit
@@ -59,20 +101,43 @@ $(function() {
     return {
         init: init
     };
-}());
+}( jQuery ));
 
-Submitter.init();
+Tipjar.SocialLinks = (function( $ ) {
+    'use strict';
 
-// I have no idea why the click event sometimes isn't fired... really weird
-// Firefox it works every time...
-// It seems that when you click on the padding around the button, it doesn't work. Maybe try wrapping the button in a different element which takes care of layout things and the <button> is just styles
-// It could also be that since you're using top: 7px; when the button gets active that it doesn't think it should be a click because the mouse is no longer on the button. Solution could be to use transforms or to add a pseudo element which covers up the 7px that goes missing. Chris Coyier of css-tricks posted about that earlier this year (he has button very similar to yours)
-// If none of that works, maybe scrap the css and start over!
-$('#buttonholder').on('click', function (evt) {
-    console.log('#buttonholder:', evt.target);
-});
-$('body').on('click', function (evt) {
-    console.log('body:', evt.target);
+    var opts = {
+        pinterest: {
+            height: 525
+        },
+        google: {
+            height: 400
+        }
+    },
+    // delay = 400,
+
+    init = function() {
+        $('.social-links li').on('click', function() {
+            var link = $(this).find('a'),
+                type = link.attr('class').replace('share-', '');
+
+            // Open popup window with social link
+            window.open( link.attr('href'), '_blank', 'width=560,height=' + (opts[type] && opts[type].height || 450) );
+
+            // Prevent default and stop propagation
+            return false;
+        });
+    };
+
+    return {
+        init: init
+    };
+}( jQuery ));
+
+
+$(document).ready(function() {
+    Tipjar.Environment.init();
+    Tipjar.Submitter.init();
+    Tipjar.SocialLinks.init();
 });
 
-});

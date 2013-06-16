@@ -12,7 +12,7 @@
   - i.e. If someone were to click on Photoshop, clicking on the secondary nav     would be `filter=photoshop+'nav_option'`
   - from the home page (all tips)
 9.  Have a pc/mac toggle button that would switch all text like "cmd" with "ctrl"
-10. Eventually be able to click on a tip, and it would give examples of how the   specific tip would be useful. This might take a new page template or options so   that we don't have to truncate captions, yet still have full examples.
+10. Eventually be able to click on a tip, and it would give examples of how the   specific tip would be useful. This might take a new page template or options so that we don't have to truncate captions, yet still have full examples.
   - OR just to intermediate photoshop tips. tough call.
 12. Reformat documentation pages
   - Added a much need typographical hierarchy all within a ".lens-wrapper"
@@ -23,18 +23,17 @@
 19. Needs to be mobile friendly sweet jesus what have I done.
 20. Make Tumblr blog look like the site, maybe same nav?
 21. Get a working version of the Submit tip in the footer.
-22. Add more information to the contact page i.e., info about contacting me,
-  submit feedback, etc.
+22. Add more information to the contact page i.e., info about contacting me, submit feedback, etc.
 23. Tell the contact tip page to just add thank you text at the end of the form, instead of refreshing and appending #form to the end of the URL
 24. Secondary nav drop down once clicking on app name?
 26. Separate tip jargon .lens, instead of page?
-27. Add a picture to the TipJargon page of a default application window, the label
-  everything so people can match it to the definition.
-28. Get all extra .js bits into at least one js file [tipjar.js?]
+27. Add a picture to the TipJargon page of a default application window, the label everything so people can match it to the definition.
 
 
 ## Completed Todos
 
+28. Get all extra .js bits into at least one js file [tipjar.js?]
+0. Add readme
 4. Create and style the Submit Tip form
   - added a page in layouts/submit.html
   - called the page in layouts/footer.html
@@ -50,4 +49,3 @@
 7.  Correspond the header image to the current application color
 14. Contact page needs to be made
 25. Get a page.css going and add it to settings.css.lens
-0. Add readme
