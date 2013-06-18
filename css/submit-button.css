@@ -70,7 +70,7 @@ button[type="submit"]:active {
     margin: 1em auto 3em;
 }
 input[type="text"], input[type="email"] {
-    width: 365px;
+    width: 387px;
     outline: none;
     resize: none;
     font-size: 12px;

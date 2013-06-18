@@ -819,13 +819,15 @@ div.paginate {
 	float:left;
 	clear:left;
 	width:100%;
+	margin-top:3em;
 	text-align:center;
-	margin-bottom: 3em;
 }
+
 div.paginate div.nav {
 	margin:0 auto;
 	display:inline-block;
 }
+
 div.paginate ol {
 	list-style:none;
 	display:inline-block;
@@ -834,6 +836,7 @@ div.paginate ol {
 div.paginate ol li {
 	display:inline;
 }
+
 div.paginate a {
 	padding:0 5px;
 	text-align:center;
@@ -841,6 +844,7 @@ div.paginate a {
 	color:inherit;
 	font-size:.857em;
 }
+
 div.paginate a.k-pagination-current {
 	cursor:default;
 	color:$color_nav_current;
@@ -855,12 +859,119 @@ div.paginate li.next {
 	margin-left:10px;
 }
 
-/* numbered links */
 div.paginate ol.num li:after {
 }
 
 div.paginate ol.num li:last-child:after {
 	content:none;
+}
+
+i {
+    color: white;
+}
+#pag-wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 180px;
+    margin-top: 5em;
+}
+#pag-top {
+    width: 0;
+    height: 0;
+    border-left: 90px solid transparent;
+    border-right: 90px solid transparent;
+    border-bottom: 20px solid black;
+}
+#pag-middle {
+    width: 180px;
+    height: 29px;
+    background: black;
+}
+#pag-bottom {
+    width: 0;
+    height: 0;
+    border-left: 90px solid transparent;
+    border-right: 90px solid transparent;
+    border-bottom: 20px solid black;
+    -webkit-transform: rotate(180deg);
+    margin-bottom: 2em;
+}
+#tag-holder-left {
+    position: relative;
+    float: left;
+    /*top: 10px;*/
+    right: 30px;
+}
+#tag-holder-right {
+    position: relative;
+    float: right;
+    top: -29px;
+    left: 30px;
+}
+#left {
+    position: relative;
+    background-image: url(imgs/pagetag.svg);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    width:30px;
+    height: 30px;
+    -webkit-transition: all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+    -moz-transition: all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+    -ms-transition: all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+    -o-transition: all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+    transition: all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+}
+#right {
+    position: relative;
+    background-image: url(imgs/pagetag2.svg);
+    background-position: -31px 0px;
+    background-repeat: no-repeat;
+    width:30px;
+    height: 30px;
+    -webkit-transition: all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+    -moz-transition: all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+    -ms-transition: all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+    -o-transition: all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+    transition: all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+#left:hover {
+    width:50px;
+    right: 20px;
+    -webkit-transition: all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+    -moz-transition: all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+    -ms-transition: all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+    -o-transition: all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+    transition: all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+    /* linear */
+}
+#right:hover {
+    width:50px;
+    left: 20px;
+    background-position: -11px 0px;
+    -webkit-transition: all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+    -moz-transition: all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+    -ms-transition: all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+    -o-transition: all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+    transition: all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+    /* linear */
+}
+#left i {
+    line-height: normal;
+    position: relative;
+    float: left;
+    left: 10px;
+    top: 5px;
+}
+#right i {
+    line-height: normal;
+    position: relative;
+    float: right;
+    left: -10px;
+    top: 5px;
 }
 
 /* ----- HOME ----- */

@@ -1,3 +1,5 @@
+<koken:title />
+
 <koken:include file="layouts/header.html" />
 
 <koken:include file="inc/submit.php" />

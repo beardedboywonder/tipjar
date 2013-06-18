@@ -36,7 +36,7 @@
 
 </ol>
 
-<koken:include file="layouts/pagination.html" />
+<koken:include file="layouts/pagination2.html" />
 
 <koken:else>
 
