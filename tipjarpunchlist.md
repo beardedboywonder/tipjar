@@ -7,7 +7,6 @@
   - Can be done in Settings > Site Publishing > Labels and Links
 2.  Create terms page for standardized languages
   - Have users able to select which app? and have a universal terms page?
-3.  Create and style pagination
 5.  Figure out a way to merge filters
   - i.e. If someone were to click on Photoshop, clicking on the secondary nav     would be `filter=photoshop+'nav_option'`
   - from the home page (all tips)
@@ -49,3 +48,4 @@
 7.  Correspond the header image to the current application color
 14. Contact page needs to be made
 25. Get a page.css going and add it to settings.css.lens
+3.  Create, style, and implement pagination

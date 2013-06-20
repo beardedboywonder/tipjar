@@ -1,50 +1,73 @@
-/*div.paginate {
+div.paginate {
     float:left;
     clear:left;
     width:100%;
+    margin-top:3em;
     text-align:center;
-    margin-bottom: 3em;
+}
+
+div.paginate div.nav {
+    margin:0 auto;
+    display:inline-block;
 }
 
 div.paginate ol {
+    position: absolute;
+    /*background: green;*/
     list-style:none;
-    display:inline-block;
+    display: block;
+    width: 180px;
+    height: 29px;
 }
 
 div.paginate ol li {
     display:inline;
 }
+
 div.paginate a {
-    padding:0 5px;
+    /*padding:0 5px;*/
     text-align:center;
     font-weight:normal;
     color:inherit;
     font-size:.857em;
 }
-/* numbered links 
+
+div.paginate li.prev {
+    list-style-type: none;
+    margin-right:10px;
+}
+
+div.paginate li.next {
+    list-style-type: none;
+    margin-left:10px;
+}
+
 div.paginate ol.num li:after {
 }
 
 div.paginate ol.num li:last-child:after {
     content:none;
-}*/
+}
+div.nav {
+    display: inline-block;
+}
 
-.num {
-    
+.num {}
+.num li a {
+    position: relative;
+    padding: 0 10px;
+    font-size: 1.2em;
+    vertical-align: middle;
+    top: -7px;
 }
 ol.num li {
     display: inline-block;
 }
 ol.num li a {
-    color: white;
-}
-div.paginate a.k-pagination-current {
-    cursor:default;
-    color:$color_nav_current;
-    font-weight:bold;
+    color: #888;
 }
 
-i {
+#left, #right i {
     color: white;
 }
 #pag-wrapper {
@@ -77,13 +100,13 @@ i {
 #tag-holder-left {
     position: relative;
     float: left;
-    top: 10px;
+    /*top: 10px;*/
     right: 30px;
 }
 #tag-holder-right {
     position: relative;
     float: right;
-    top: -22px;
+    top: -29px;
     left: 30px;
 }
 #left {

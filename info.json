@@ -44,7 +44,7 @@
 				"color_h": "#222",
 				"color_nav": "#787878",
 				"color_nav_hover": "#222",
-				"color_nav_current": "#222",
+				"color_nav_current": "#fff",
 				"color_essay_caption":"#e6e6e6",
 				"color_essay_caption_text":"#222"
 			}
@@ -356,7 +356,7 @@
 				"albums_detail_limit": {
 					"label": "Items per page",
 					"type": "slider",
-					"min": 8,
+					"min": 1,
 					"max": 50,
 					"step": 1,
 					"value": 21,

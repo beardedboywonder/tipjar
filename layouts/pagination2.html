@@ -1,64 +1,39 @@
 <koken:pagination>
-
 	<div class="paginate">
-		
 		<div class="nav">
-
-			<ol id="middle">
-
-				<koken:if condition="{{ page }} > 1">
-
-				<li class="prev">
+			<div id="pag-top"></div>
+			<koken:if condition="{{ page }} > 1">
+				<li class="prev" id="tag-holder-left">
 					<koken:link data="previous_page" title="Previous" bind_to_key="left">
-						<i class="icon-caret-left icon-large"></i>
+						<div id="left"><i class="icon-caret-left icon-large"></i></div>
 					</koken:link>
 				</li>
-
-				</koken:if>
-
-				<li>
-
-					<ol class="num">
-
-					<koken:loop>
-
-						<li>
-							<koken:link class="{{ is_current }}" title="{{ number }}">
-								{{ number }}
-							</koken:link>
-						</li>
-
-					</koken:loop>
-
-					</ol>
-
-				</li>
-
-				<koken:if condition="{{ page }} < {{ pages }}">
-
-				<li class="next">
+			</koken:if>
+			<div id="pag-middle">
+				<ol id="middle">
+					
+					<li>
+						<ol class="num">
+						<koken:loop>
+							<li>
+								<koken:link class="{{ is_current }}" title="{{ number }}">
+									{{ number }}
+								</koken:link>
+							</li>
+						</koken:loop>
+						</ol>
+					</li>
+					
+				</ol>
+			</div>
+			<koken:if condition="{{ page }} < {{ pages }}">
+				<li class="next" id="tag-holder-right">
 					<koken:link data="next_page" title="Next" bind_to_key="right">
-						<i class="icon-caret-right icon-large"></i>
+						 <div id="right"><i class="icon-caret-right icon-large"></i></div>
 					</koken:link>
 				</li>
-
-				</koken:if>
-			</ol>
-
+			</koken:if>
+		    <div id="pag-bottom"></div>
 		</div>
-
 	</div>
-
 </koken:pagination>
-
-<!-- <div id="pag-wrapper">
-    <div id="pag-top"></div>
-    <div id="tag-holder-left">
-        <div id="left"><i class="icon-caret-left icon-large"></i></div>
-    </div>
-    <div id="pag-middle"></div>
-    <div id="tag-holder-right">
-        <div id="right"><i class="icon-caret-right icon-large"></i></div>
-    </div>
-    <div id="pag-bottom"></div>
-</div> -->
