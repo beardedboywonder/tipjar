@@ -1,3 +1,5 @@
+<koken:title />
+
 <koken:include file="layouts/header.html" />
 
 <koken:load>
@@ -22,13 +24,8 @@
 
 <div class="head">
 
-<!-- 	<h2>
-		{{ content.title | content.filename }}
-	</h2> -->
-
+	<!-- <h2>{{ content.title | content.filename }}</h2> -->
 </div>
-
-<div>
 
 	<div class="mcol">
 

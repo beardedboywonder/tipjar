@@ -91,7 +91,7 @@ if(isset($_POST['submitted'])) {
 			</label>
 		</div>
 		<div class="onoffswitch">
-			<input type="radio" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch7" value="Sublime Text" data-tip-app="Sublime Tet">
+			<input type="radio" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch7" value="Sublime Text" data-tip-app="Sublime Text">
 			<label class="onoffswitch-label-7" for="myonoffswitch7">
 				<div class="onoffswitch-inner"></div>
 				<div class="onoffswitch-switch"></div>

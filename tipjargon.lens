@@ -17,11 +17,13 @@
         <dd>Located just below the Application Bar, the Control panel displays options for the currently selected tool. In Illustrator, the Control panel displays options for the currently selected object. (In <span class="photoshop">Adobe Photoshop</span> this is known as the Options bar. In <span class="flash">Adobe Flash</span>, <span class="dreamweaver">Adobe Dreamweaver</span>, and Adobe Fireworks this is known as the Property Inspector and includes properties of the currently selected element.)</dd>
         <dt><a href="">E – Tools Panel</a></dt>
         <dd>The default position for the Tools panel is on the left hand side of the application window. It contains tools for creating and editing images, artwork, page elements, and so on. Related tools are grouped.</dd>
+        <br>
         <dt><a href="">Windows</a></dt>
         <dd>Located in <b>Menu Bar > Window > *</b> clicking on Window shows you how you can create whatever you need. Options range from 3D, Timeline(s), to SVG Interactivity.</dd>
 
 
-    </dl>
+    </dl> <!-- end accordion -->
+    
     <div class="footnote">
         Information from:<br>
         <a href="http://helpx.adobe.com/photoshop/topics.html">http://help.adobe.com</a>

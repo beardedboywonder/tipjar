@@ -453,74 +453,11 @@ footer.bot li a{
 	width:650px;
 }
 
-/* ----- LAYOUT: TWO COL ----- */
+/* ----- LAYOUT ----- */
 
-div#twocol {
-	float:left;
-}
-
-div#twocol div.mcol {
-	width:650px;
-	float:left;
-	margin-right:30px;
-}
-
-div#twocol div.rcol {
-	float:left;
-	width:200px;
-	font-size:.857em;
-}
-
-div#twocol div.rcol section {
-	margin-bottom:1.6364em;
-	clear:left;
-	display:block;
-	float:left;
-}
-
-div#twocol hr:last-child {
-	display:none;
-}
-
-/* ----- LAYOUT: TWO COL ESSAYS ----- */
-
-div#twocol article {
-	float:left;
-	width:100%;
-	margin-bottom:1.6364em;
-}
-
-div#twocol article div.mcol {
-	float:left;
-}
-
-div#twocol article div.rcol {
-	float:left;
-	width:200px;
-	margin-left:30px;
-}
-
-div#twocol article div.lcol {
-	float:left;
-	width:200px;
-	margin-right:30px;
-	font-size:.857em;
-}
-
-aside a:link,
-aside a:visited,
-aside a:active {
-	color:inherit;
-}
-
-aside a:hover {
-	color:$color_links_hover;
-}
-
-/* ----- LAYOUT: FLIPPED VERSION ----- */
-
-div#twocol.flip div.mcol {
-	margin-right:0;
+div.mcol {
+	width: 500px;
+	margin: 0 auto;
 }
 
 /* CONTENT
@@ -924,27 +861,11 @@ li.album .t-text p {
 	div.head.mcol {
 		width:100%;
 	}
-
-	div#twocol div.mcol {
-		width:100%;
+	div.mcol {
+		width:580px;
 		float:none;
-		margin:0 0 1.1667em 0;
+		margin:0 auto;
 	}
-
-	div#twocol div.rcol {
-		width:100%;
-		float:none;
-	}
-
-	div#twocol div.rcol section {
-		width:100%;
-	}
-
-	div#twocol ol.data li span.value {
-		width:628px;
-	}
-
-
 	/*body::before{content: "TABLET";font-weight: bold;display: block;text-align: center;background: rgba(255,255,0, 0.9);position: fixed;top: 0;left: 0;right: 0;z-index: 99;}*/
 }
 
@@ -990,15 +911,10 @@ li.album .t-text p {
 		margin:0 0 30px 0;
 	}
 
-	div#twocol div.mcol {
+	div.mcol {
 		width:280px;
 		float:none;
 		margin:0 0 1.1667em 0;
-	}
-
-	div#twocol div.rcol {
-		width:100%;
-		margin:0 0 24px 0;
 	}
 
 	body.k-source-content div.head {
@@ -1044,18 +960,11 @@ li.album .t-text p {
 		margin:0 0 30px 0;
 	}
 
-	div#twocol div.mcol {
+	div.mcol {
 		width:436px;
 		float:none;
 		margin:0 0 1.1667em 0;
 	}
-
-	div#twocol div.rcol {
-		width:436px;
-		float:none;
-		margin:0 0 24px 0;
-	}
-
 	body.k-source-content div.head {
 		width:436px;
 	}

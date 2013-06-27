@@ -4,9 +4,7 @@
 
 <div class="head">
 
-	<h2>
-		{{ labels.content.plural }} / {{ archive.title }}
-	</h2>
+	<h2>{{ labels.content.plural }} / {{ archive.title }}</h2>
 
 </div>
 
