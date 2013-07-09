@@ -16,7 +16,7 @@
 12. Reformat documentation pages
   - Added a much need typographical hierarchy all within a ".lens-wrapper"
     - Each page should have a page title name, mini-divider, intro paragraph, and footnote built in.
-13. About Page needs to be made
+13. About Page needs to be made - copy info from splash submit/info page
 17. 404 page
 18. Continue documenting resources and adding terminology
 19. Needs to be mobile friendly sweet jesus what have I done.
@@ -26,11 +26,12 @@
 23. Tell the contact tip page to just add thank you text at the end of the form, instead of refreshing and appending #form to the end of the URL
 24. Secondary nav drop down once clicking on app name?
 26. Separate tip jargon .lens, instead of page?
-27. Add a picture to the TipJargon page of a default application window, the label everything so people can match it to the definition.
+29. 
 
 
 ## Completed Todos
 
+27. Add a picture to the TipJargon page of a default application window, the label everything so people can match it to the definition.
 28. Get all extra .js bits into at least one js file [tipjar.js?]
 0. Add readme
 4. Create and style the Submit Tip form

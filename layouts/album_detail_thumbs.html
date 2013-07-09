@@ -2,7 +2,7 @@
 
 	<li class="album-content">
 
-		<koken:link title="View {{ content.filename }}" class="thumb">
+		<koken:link title="View {{ content.title }}" class="thumb">
 
 			<koken:if data="settings.albums_detail_crop" equals="proportional">
 
@@ -24,13 +24,13 @@
 
 			<koken:if true="settings.albums_detail_show_title">
 
-			<h3>
-		        <koken:link class="{{ routed_variables.slug }}" title="{{ content.title }}">
+			<h3 class="{{ routed_variables.slug }}" title="{{ content.title }}">
 					{{ content.title | content.filename }}
-				</koken:link>
 			</h3>
 
 			</koken:if>
+
+			<span class="name-brdr {{ routed_variables.slug }}"></span>
 
 			<koken:if true="settings.albums_detail_show_caption">
 

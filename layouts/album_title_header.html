@@ -3,6 +3,8 @@
 	<h2>{{ album.title }}</h2>
 	<span id="deco-right"></span>
 
+	<span class="{{ location.root_folder }}" ></span>
+
 	<koken:if true="settings.show_album_desc">
 		{{ album.description paragraphs="true" }}
 	</koken:if>

@@ -6,6 +6,15 @@
 
     <img src="http://tipjar.cias.rit.edu/storage/cache/images/000/033/basiclayout,xlarge.2x.png?1371156540" width="980px">
 
+    <div id="menu-outer">
+        <div class="table">
+            <ul id="horizontal-list">
+                <li><kbd>⇧</kbd><p>Shift</p></li>
+                <li><kbd>⌘</kbd><p>Command</p></li>
+            </ul>
+        </div>
+    </div>
+
     <dl class="accordion">
         <dt><a href="">A – Application Frame</a></dt>
         <dd>The Application frame groups all the workspace elements in a single, integrated window that lets you treat the application as a single unit. When you move or resize the Application frame or any of its elements, all the elements within it respond to each other so none overlap. Panels don’t disappear when you switch applications or when you accidentally click out of the application. If you work with two or more applications, you can position each application side by side on the screen or on multiple monitors.<br><br>If you are using a Mac and prefer the traditional, free-form user interface, you can turn off the Application frame. In <span class="illustrator">Adobe Illustrator</span>, for example, select Window > Application Frame to toggle it on or off. (In <span class="flash">Flash</span>, the Application frame is on permanently for Mac, and <span class="dreamweaver">Dreamweaver</span> for Mac does not use an Application frame.)</dd>

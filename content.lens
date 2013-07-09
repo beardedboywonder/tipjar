@@ -23,8 +23,8 @@
 </koken:head>
 
 <div class="head">
-
-	<!-- <h2>{{ content.title | content.filename }}</h2> -->
+	<h2>{{ content.title | content.filename }}</h2>
+	<hr>
 </div>
 
 	<div class="mcol">
@@ -49,7 +49,7 @@
 
 		</div>
 
-		{{ content.caption paragraphs="true" }}
+		<div class="content-caption">{{ content.caption paragraphs="true" }}</div>
 
 		<koken:if true="settings.show_disc_content">
 

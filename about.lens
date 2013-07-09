@@ -1,12 +1,60 @@
 <koken:include file="layouts/header.html" />
 
-<body>
-  <p>Dear</p>
-  <p>anyone who stumbles on this page,</p>
-  <p>THERE WILL BE AN ABOUT PAGE SOON</p>
-  <p>I promise</p>
-  <p>Love</p>
-  <p>jake</p>
-</body>
+<div class="head">
+	<span id="deco-left" class="deco"></span>
+	<h2 class="no-marg-b">So What is TipJar?</h2>
+	<span id="deco-right" class="deco"></span>
+</div>
 
+<div><img src="../favicon-After Effects.ico"><img src="../favicon-Dreamweaver.ico"><img src="../favicon-Flash.ico"><img src="../favicon-Illustrator.ico"><img src="../favicon-Indesign.ico"><img src="../favicon-Photoshop.ico"><img src="../favicon-Sublime Text.ico"></div>
+<br>
+<p class="sub-desc">TipJar will be home to hundreds of tips and tricks for the Adobe Suite of applications, and more. Started from my brain-bank of hotkeys, tips have trickled in from friends to help build up a collection for <em>you</em> to use. Each application has its own page with varying difficulties of tips. The difficulty of the tips (beginner, intermediate, advanced) is based off of two points. 1) How generally "known" the tip is e.g. how well it is documented in the wild, and 2) How easily the tip can be reproduced. I will be taking some assumptions in your knowledge of the Adobe applications, but there will also be a dedicated reference section for anyone who easily gets their terms mixed up, or if I start using words that don't exist.
+	<br><br>
+	"But the header text promised tips!" Yes, yes it did. Before I fully launch TipJar I want a series of tips to show off, but I need your help! I'm pretty proud of knowing lots of hotkeys and workflow tips, but I can't possibly know them all. If have you discovered something that makes you a Photoshop wizard, or something that blew away your boss's expectations with sparkly goodness, <a href="/submit">do me solid and submit your tip below!</a> I would be super grateful. Right now there are only seven supported applications but I hope to expand them as the Adobe Suite grows, or the demand for other apps goes up as well.
+</p>
+<br>
+<h2>What's in a Tip?</h2>
+<p class="sub-desc">Below is the example of what a few tips look like once they have been made and uploaded. Their name or title is displayed and the description of how to use the tip follows. Don't feel like reading? Not a problem. Each tip will have a bolded selection that represents its hotkey or action. My focus will be making the tip as easy to watch or to read as possibly. That being said, the design will always be open to changes. Any changes that get made in any apps with automatically get reflected below.</p>
+<br>
+<br>
+<koken:load source="featured_content">
+	<ol class="thumbs">
+		<koken:loop>
+			<li class="album-content">
+				<koken:link title="View {{ content.filename }}" class="thumb">
+					<koken:if data="settings.albums_detail_crop" equals="proportional">
+						<koken:img class="preview" />
+						<koken:else>
+						<koken:img size="1:1" />
+					</koken:if>
+				</koken:link>
+				<div class="t-text">
+					<koken:if true="settings.albums_detail_show_date">
+						<span class="date"><koken:time /></span>
+					</koken:if>
+					<koken:if true="settings.albums_detail_show_title">
+						<h3>
+							<koken:link class="{{ routed_variables.slug }}" title="{{ content.title }}">
+							{{ content.title | content.filename }}
+							</koken:link>
+						</h3>
+					</koken:if>
+					<span class="name-brdr"></span>
+					<koken:if true="settings.albums_detail_show_caption">
+						<koken:not empty="content.caption">
+							<p>
+								<koken:if true="settings.albums_detail_truncate">
+								{{ content.caption truncate="130" }}
+								<koken:else>
+								{{ content.caption }}
+								</koken:if>
+							</p>
+						</koken:not>
+					</koken:if>
+				</div>
+			</li>
+		</koken:loop>
+	</ol>
+</koken:load>
+<br>
 <koken:include file="layouts/footer.html" />
