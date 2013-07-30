@@ -26,7 +26,7 @@
 23. Tell the contact tip page to just add thank you text at the end of the form, instead of refreshing and appending #form to the end of the URL
 24. Secondary nav drop down once clicking on app name?
 26. Separate tip jargon .lens, instead of page?
-29. 
+29. Change pagination css styling to accomodate for elongated navigation
 
 
 ## Completed Todos
